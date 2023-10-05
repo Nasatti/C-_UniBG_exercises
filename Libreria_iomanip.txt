@@ -1,0 +1,6 @@
+#include <iomanip>
+
+cout << setw(15) --> Imposta la larghezza del campo di output
+<< left/right -->  Impostano l'allineamento del testo a sinistra o destra del campo
+<< setfill('-') << setw(x) --> riempe il campo del carattere --> una volta usato e si vuole tornare alla normalità setfill(' ')
+fixed << setprecision(5) --> fixed: fissa il numero di decimali fisso da mostrare       setprecision(x):imposta iol numero di cifre decimali
