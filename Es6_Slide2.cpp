@@ -29,7 +29,7 @@ int main(){
             break;
             case 4:
                 if(b==0) cout<<"Non puoi dividere per 0"<<endl;
-                else cout<<"Il risultato \212: "<<(float)a/b<<endl;
+                else cout<<"Il risultato \212: "<<(float)a/b<<  " con resto di "<< a%b <<endl;
             break;
             default:
                 cout<<"Scelta non valida"<<endl;
