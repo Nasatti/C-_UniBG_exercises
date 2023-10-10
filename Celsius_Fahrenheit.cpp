@@ -8,12 +8,25 @@ int main(){
     while(!verifica){
         cout << "Please give in a lower limit, limit >= 0:" << endl;
         cin >> lower;
+        if(lower < 0){
+            cout << "Wrong input!" << endl << endl;
+            continue;
+        }
         cout << "Please give in a higher limit, " << lower << " <= limit <= 50000:" << endl;
         cin >> higher;
+        if(higher > 50000){
+            cout << "Wrong input!" << endl << endl;
+            continue;
+        }
+        else if(higher < lower){
+            cout << "Wrong input!" << endl << endl;
+            continue;
+        }
         cout << "Please give in a step, 0 < step <= 10:" << endl;
         cin >> step;
-        if(lower < 0 || higher > 50000 || step <= 0 || step > 10 || lower > higher){
+        if(step <= 0 || step > 10){
             cout << "Wrong input!" << endl << endl;
+            continue;
         }
         else verifica = true;
     }
