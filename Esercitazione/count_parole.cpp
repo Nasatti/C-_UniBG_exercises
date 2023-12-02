@@ -20,7 +20,7 @@ int conta_parole(char string[]){
         			verifica = true;
         			i--;
 				}
-			}while(verifica);
+			}while(!verifica);
 		}
 	}
     return parole;
