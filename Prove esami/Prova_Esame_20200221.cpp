@@ -20,7 +20,7 @@ struct NODO{
 int main(){
     ABBONAMENTO info;
     NODO *head;
-    head = new NODO;
+    /*head = new NODO;
     cin.getline(info.id, 100,'\n');
     cin.getline(info.data_emissione, 100, 'n');
     cin.getline(info.data_scadenza, 100,'\n');
@@ -28,12 +28,12 @@ int main(){
     cin >> info.importo;
     cin >> info.u_addebito;
     cin.getline(info.data_addebito, 100,'\n');
-    ins_testa(head, info);
+    ins_testa(head, info);*/
 }
 
 int ins_testa(NODO *&head, ABBONAMENTO info){//inserimento in testa
     NODO *t;
-    t = new NODO;
+    t = new NODO;//fondamentale per allocare memoria
     if (t == NULL) {
         return 1;
     }
