@@ -1,2 +1,2 @@
 # UniBG_exercises
-Exercises during first semester in UniBG
+Exercises during first semester in UniBG C++
